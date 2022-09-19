@@ -1,0 +1,88 @@
+<h1 class="mat-dialog-title">Add Ice-Cream</h1>
+<div mat-dialog-content>
+  <form [formGroup]="productFrom">
+    <!-- Name -->
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input formControlName="productName" matInput placeholder="Chocolate" />
+    </mat-form-field>
+    <!-- Category -->
+    <section class="example-section">
+      <span class="example-list-section">
+        <mat-label>Category</mat-label>
+      </span>
+      <span class="example-list-section">
+        <ul>
+          <li *ngFor="let subcategory of category.subcategories">
+            <mat-checkbox
+              [color]="subcategory.color"
+              (change)="updateAllComplete($event, subcategory.name)"
+            >
+              {{ subcategory.name }}
+            </mat-checkbox>
+          </li>
+        </ul>
+      </span>
+    </section>
+
+    <!-- Ingrediance -->
+    <mat-radio-group class="example-radio-group" formControlName="ingredients">
+      <mat-label>Ingrediance</mat-label>
+      <mat-radio-button
+        class="example-radio-button"
+        *ngFor="let ingrediances of ingrediancesList"
+        [value]="ingrediances"
+      >
+        {{ ingrediances }}
+      </mat-radio-button>
+    </mat-radio-group>
+
+    <!-- Food intolerances -->
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Food intolerances</mat-label>
+      <input
+        type="text"
+        formControlName="foodIntolerances"
+        matInput
+        placeholder="Food intolerances"
+      />
+    </mat-form-field>
+    <!-- Nutritional values -->
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Nutritional values</mat-label>
+      <input
+        formControlName="nutritionValue"
+        matInput
+        placeholder="Nutritional values"
+        type="number"
+      />
+    </mat-form-field>
+    <!-- Buying price -->
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Buying price</mat-label>
+      <input
+        formControlName="buyingPrice"
+        type="number"
+        matInput
+        placeholder="Buying price"
+      />
+    </mat-form-field>
+    <!-- Selling price -->
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Selling price</mat-label>
+      <input
+        formControlName="sellingPrice"
+        type="number"
+        matInput
+        placeholder="Selling price"
+      />
+    </mat-form-field>
+  </form>
+</div>
+<!-- Button -->
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button class="add-ice-cream" (click)="addProduct()">
+    Save
+  </button>
+</div>

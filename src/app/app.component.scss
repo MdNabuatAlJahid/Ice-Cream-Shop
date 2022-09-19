@@ -1,0 +1,30 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.background-color {
+  background-color: rgb(249, 246, 246);
+  color: #75b843;
+}
+
+.add-ice-cream {
+  background-color: #75b843;
+  color: white;
+}
+
+footer {
+  background: rgb(249, 246, 246);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom.*/
+  padding: 20px;
+}
+.section-top {
+  display: flex;
+  justify-content: center; /*items are centered along the line*/
+  padding: 20px 0;
+}
+.col {
+  margin: 0 15px;
+  width: 25%; /*optional*/
+}

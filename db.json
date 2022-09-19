@@ -1,0 +1,54 @@
+{
+  "productsList": [
+    {
+      "productName": "Chocolate",
+      "category": ["Cream ice cream"],
+      "ingredients": "vanilla extract",
+      "foodIntolerances": "None",
+      "nutritionValue": 1200,
+      "buyingPrice": 15,
+      "sellingPrice": 20,
+      "id": 1
+    },
+    {
+      "productName": "Vanilla",
+      "category": ["Cream ice cream", "Fruit ice cream"],
+      "ingredients": "vanilla extract",
+      "foodIntolerances": "None",
+      "nutritionValue": 2000,
+      "buyingPrice": 25,
+      "sellingPrice": 30,
+      "id": 2
+    },
+    {
+      "productName": "Strawberry",
+      "category": ["Cream ice cream"],
+      "ingredients": "vanilla extract",
+      "foodIntolerances": "None",
+      "nutritionValue": 17657774176,
+      "buyingPrice": 23,
+      "sellingPrice": 23,
+      "id": 3
+    },
+    {
+      "productName": "Blue moon",
+      "category": ["Fruit ice cream", "Water ice cream"],
+      "ingredients": "Condenced Milk",
+      "foodIntolerances": "dsfd",
+      "nutritionValue": 234,
+      "buyingPrice": 4123,
+      "sellingPrice": 1325423,
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
