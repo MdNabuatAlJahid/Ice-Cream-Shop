@@ -28,4 +28,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## To add a new ice-cream
 
-To add a new ice-cream please click on the `Add Ice-Cream`. If the name already exists you will not able to add the Ice-cream, otherwise it will be added in product list and dispalied in UI.
+To add a new ice-cream please click the `Add Ice-Cream` on top right corner. If the name already exists you will not able to add the Ice-cream, otherwise it will be added in product list and dispalied in UI.
